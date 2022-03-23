@@ -1,0 +1,1 @@
+"# MCBE-cmd-only-anticheat" 
