@@ -1,0 +1,40 @@
+Block Type: Repeat, Redstone: Always Active, /weather clear
+Bloc Type: Chain, Always Active, /tellraw @a {“rawtext”:[{“text”:”&6LAG BEING
+REMOVED”}]}
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] bedrock
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] end_portal_frame
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] barrier
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] structure_block
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] spawn_egg
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] mob_spawner
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] end_crystal
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] portal
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] end_portal
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] invisible_bedrock
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] light_block
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] elytra
+Block Type: Repeat, Redstone: Always Active, /clear @a[tag=!staff] enchanted_golden_apple
+Bloc Type: Chain, Always Active, /tellraw @a {“rawtext”:[{“text”:”SERVER RULES: No
+hacking, No trolling, No Anarchy!”}]}
+Block Type: Repeat, Redstone: Always Active, /tp nantiger58 147 5000 147
+
+#repeat for every banned player
+-------------Border system (rm is the max border radius)
+Block Type: Repeat, Redstone: Always Active, execute @p[rm=200000,r=999999] ~ ~ ~
+tp @p[r=5] 0 100 0
+Block Type: Repeat, Redstone: Always Active, execute @p[rm=-200000,r=-999999] ~ ~
+~ tp @p[r=5] 0 100 0
+Block Type: Repeat, Redstone: Always Active, execute @p[rm=198000,r=999999] ~ ~ ~
+title @p actionbar YOUR CLOSE TO THE BORDER
+Block Type: Repeat, Redstone: Always Active, execute @p[rm=-198000,r=-999999] ~ ~
+~ title @p actionbar YOUR CLOSE TO THE BORDER
+-------------
+
+Block Type: Repeat, Redstone: Always Active, /kill @e[type=lightning_bolt]
+Block Type: Repeat, Redstone: Always Active, /clear @a skull
+
+Block Type: Repeat, Redstone: Always Active, /clear @a command_block
+Block Type: Repeat, Redstone: Always Active, /clear @a chain_command_block
+Block Type: Repeat, Redstone: Always Active, /clear @a command_block_minecart
+/kill @e [type=wither]
+/kill @e[type=command_block_minecart , type=npc]
